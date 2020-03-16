@@ -1,0 +1,111 @@
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1f1;
+    width: 90%;
+}
+
+.main__boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.box__unity{
+    background-color: #fdf0a3;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 30px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px -30px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px -30px rgba(0,0,0,0.75);
+    transition: .2s;
+}
+
+.box__unity:hover{
+    background-color: #fdeb82;
+    -webkit-box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.75);
+    transition: .2s;
+}
+
+.main__bigbox{
+    z-index: 5;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    background-color: #fdf0a3;
+    -webkit-box-shadow: 0px 0px 300px 100vh rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 300px 100vh rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 300px 100vh rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.main__bigbox--show{
+    min-width: 500px;
+    min-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bixbox__header{
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    background-color: #fdeb82;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40px;
+    color: white;
+    background-color: #cc1515;
+}
+
+.header__button:hover{
+    color: #fff;
+    transition: .1s;
+}
+
+.bigbox__textarea{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    height: 90%;
+    padding-top: 10px;
+    outline: none;
+    resize: none;
+}
+
+.bigbox__textarea::-webkit-scrollbar{
+    width: 10px;
+    background-color: #fdf0a3;
+}
+
+.bigbox__textarea::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .main__bigbox--show{
+        min-width: 100%;
+    }
+}

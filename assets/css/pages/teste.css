@@ -1,0 +1,10 @@
+.command__center{
+    margin-left: 70px;
+}
+
+.command{
+    position: relative;
+    background-color: #f1f1f1;
+    width: 10px;
+    height: 10px;
+}

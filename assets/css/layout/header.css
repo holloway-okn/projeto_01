@@ -1,0 +1,8 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__title{
+    padding: 20px;
+}

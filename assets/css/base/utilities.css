@@ -1,0 +1,5 @@
+.text-grey{color: #484848;}
+.blur{-webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);filter: blur(1px);}
+.button__close{font-size: 2rem; font-weight: bolder;}
+.pointer{cursor: pointer;}
+.nostylebtn{border: none; outline: none; background-color: transparent; overflow: hidden;}
