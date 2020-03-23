@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto_01</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
-</head>
-<body>
-    <div class="content">
-        <header class="header">
-            <h1 class="header__title text-grey">Projeto_01</h1>
-        </header>
-        <div class="command__center">
-            <a href="" class="command">add</a>
-            <a href="" class="command">atua</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto_01</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="header__title text-grey">Projeto_01</h1>
+            </header>
+            <main class="main">
+                <form class="main__form">
+                    <h2 class="form__title">Cadastro</h2>
+                    <input type="text" placeholder="Digite seu nome" name="nome" class="form__input">
+                    <button type="submit" class="form__button">Cadastrar</button>
+                </form>
+            </main>
         </div>
-        <main class="main">
-            <div class="main__boxes">
-                <button onclick="appear()">
-                    <div class="box__unity"></div>
-                 </button>
-            </div>
-        </main>
-    </div>
-    <div class="main__bigbox">
-        <div class="bixbox__header">
-            <button class="nostylebtn" onclick="hide()">
-                <div class="header__button pointer">
-                    <i class="button__close">&times;</i>
-                </div>
-            </button>
-        </div>
-        <textarea class="bigbox__textarea" name="" rows="28"></textarea>
-    </div>
-</body>
+    </body>
 </html>
